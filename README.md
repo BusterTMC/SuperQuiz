@@ -1,39 +1,51 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Super Quiz
+Super Quiz is a short and fun general knowledge quiz game to challenge yourself and your friends.
 
-Welcome,
+## Features
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- __RadioButton__
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+  - First of we have 4 radio buttons. They work as your anser option, you can select one at the time.
 
-## Codeanywhere Reminders
+- __SubmitButton__
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+  - We also have a submit button at the bottom for the user to submit it's answer.
 
-`python3 -m http.server`
+- __Result__
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - When all the answers have been answered the user will se their score out of 9 since there is 9 questions.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Features Left to Implement
 
-`http_server`
+- Another feture that can be inclided is a time limit for every question.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Validator Testing
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbustertmc-superquiz-lwalo22teu.us2.codeanyapp.com%2F%23%2Fworkspaces%2FSuperQuiz&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Deployment
 
-To log into the Heroku toolbelt CLI:
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The live link can be found here - <https://code-institute-org.github.io/love-running-2.0/index.html>
 
----
+## Credits
+To help me with this project I took help from a few differetn youtbe videos and websites I will link them below.
 
-Happy coding!
+(https://www.youtube.com/watch?v=HXXfGD54vqY&ab_channel=MakersGroup)
+(https://developer.mozilla.org/en-US/) 
+(https://www.w3schools.com/)
+
+### Content
+
+- The favicon in were taken from [red ketchup](https://redketchup.io/favicon-generator)
+
+Thank you!
+
+
