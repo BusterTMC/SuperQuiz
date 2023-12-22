@@ -71,14 +71,7 @@ const data = [
         d: "Arctic",
         correct: "c",
     },
-    {
-        question: "What is the capital of the United States?",
-        a: "Washington, D.C.",
-        b: "New York",
-        b: "Los Angeles",
-        d: "Seattle",
-        correct: "a"
-    },
+    
 ]
 
 const quiz = document.getElementById("quiz")
@@ -109,19 +102,43 @@ optionD.innerText = currentQuizData.d
 }
 
 function deselectAnswers() {
-    answerEls.forEach((answerEL) => (
+    answerEls.forEach((answerEL) =>(
         answerEL.checked = false
     ))
 }
 
-function getSelect() { 
+function getSelected() { 
     let answer
 
-    answerEls.forEach((answerEL) => { 
-        if (answerEL.checked) { 
+    answerEls.forEach((answerEL) =>{ 
+        if(answerEL.checked){ 
             answer = answerEL.id
         }
     })
+
     return answer
 }
 
+submitBtn.addEventListener("click", () =>{ 
+    const answer = getSelected()
+
+
+    if(answer){ 
+        if(answer === data[currentQuiz].correct){ 
+            score++
+        }
+        currentQuiz++
+
+        if(currentQuiz < data.length){ 
+            loadQuiz()
+        }
+        else{ 
+            quiz.innerHTML = `
+            <h2>You Answered ${score}/${data.length} Questions Correctly</h2>
+
+            <button onclick="location.reload()">Play Again!</button>
+            
+            `
+        }
+    }
+})
