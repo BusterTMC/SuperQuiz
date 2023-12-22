@@ -72,40 +72,40 @@ const data = [
         correct: "c",
     },
     
-]
+];
 
-const quiz = document.getElementById("quiz")
-const answerEls = document.querySelectorAll(".answer")
-const questionEl = document.getElementById("question")
-const optionA = document.getElementById("optionA")
-const optionB = document.getElementById("optionB")
-const optionC = document.getElementById("optionC")
-const optionD = document.getElementById("optionD")
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEl = document.getElementById("question");
+const optionA = document.getElementById("optionA");
+const optionB = document.getElementById("optionB");
+const optionC = document.getElementById("optionC");
+const optionD = document.getElementById("optionD");
 
-const submitBtn = document.getElementById("submit")
+const submitBtn = document.getElementById("submit");
 
-let currentQuiz = 0
-let score = 0
+let currentQuiz = 0;
+let score = 0;
 
-loadQuiz()
+loadQuiz();
 
 function loadQuiz() {
-deselectAnswers()
+deselectAnswers();
 
-const currentQuizData = data[currentQuiz]
+const currentQuizData = data[currentQuiz];
 
-questionEl.innerText = currentQuizData.question
-optionA.innerText = currentQuizData.a
-optionB.innerText = currentQuizData.b
-optionC.innerText = currentQuizData.c
-optionD.innerText = currentQuizData.d
+questionEl.innerText = currentQuizData.question;
+optionA.innerText = currentQuizData.a;
+optionB.innerText = currentQuizData.b;
+optionC.innerText = currentQuizData.c;
+optionD.innerText = currentQuizData.d;
 }
 
 function deselectAnswers() {
     answerEls.forEach((answerEL) =>(
         answerEL.checked = false
     ))
-}
+};
 
 function getSelected() { 
     let answer
@@ -117,7 +117,7 @@ function getSelected() {
     })
 
     return answer
-}
+};
 
 submitBtn.addEventListener("click", () =>{ 
     const answer = getSelected()
@@ -141,4 +141,4 @@ submitBtn.addEventListener("click", () =>{
             `
         }
     }
-})
+});
